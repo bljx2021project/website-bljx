@@ -4,18 +4,36 @@
 #header {
     position: fixed;
     height: 60px;
-    width: 100%;
-
-    background-color: black;
+    left: 250px;
+    width: calc(100% - 250px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header ul{
+    
+    right: 15px;
 }
 
 #side {
     position: fixed;
-    top: 60px;
+    text-align: center;
+    /* top: 60px; */
     height: 100%;
     width: 250px;
+    z-index: 101;
+    margin: auto;
+}
+#logo img{
+    margin: 15px;
 
-    background-color: gray;
+    border-radius: 50%;
+    width: 150px;
+}
+#logo h5{
+    font-size: 16px;
+    line-height: 24px;
 }
 
 #frames {

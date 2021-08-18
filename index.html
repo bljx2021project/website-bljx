@@ -8,20 +8,62 @@
     <title>北林计协|北京林业大学计算机与网络协会</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- 使用font-awesome-4.7.0 -->
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <!-- 使用Layui -->
     <link rel="stylesheet" href="./layui/css/layui.css">
     <script src="./layui/layui.js"></script>
 </head>
 
 <body>
-    <div id="header">
-        <div id="search"></div>
-        <div id="share"></div>
-        <div id="login"></div>
+    <div id="header" class="layui-bg-blue">
+        <select name="search" lay-verify="" lay-search>
+            <option value="">layer</option>
+            <option value="">form</option>
+            <option value="" selected>layim</option>
+          </select>     
+        <ul class="layui-nav layui-bg-blue">
+            <li class="layui-nav-item">
+                <a href="">控制台</a>
+            </li>
+            <li class="layui-nav-item">
+                <a href=""><img src="./images/test1.png" class="layui-nav-img">用户1</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">修改信息</a></dd>
+                    <dd><a href="javascript:;">退出登录</a></dd>
+                </dl>
+            </li>
+        </ul>
     </div>
-    <div id="side">
-        <div id="logo"></div>
-        <div id="navbar"></div>
+    <div id="side" class="layui-bg-black">
+        <div id="logo">
+            <img src="./images/logo.jpg" alt="Logo">
+            <h5>北京林业大学计算机与网络协会</h5>
+        </div>
+        <hr class="layui-border-green">
+        <ul class="layui-nav layui-nav-tree" style="width: auto;margin: 0 10px;">
+            <li class="layui-nav-item layui-this"><a href="javascript:;">主页</a></li>
+            <li class="layui-nav-item"><a href="javascript:;">知识科普</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">预约维修系统</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">常见问题</a></dd>
+                    <dd><a href="javascript:;">教职工预约通道</a></dd>
+                    <dd><a href="javascript:;">学生预约通道</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="javascript:;">大型维修日活动</a></li>
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;">联系我们</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">官方QQ群</a></dd>
+                    <dd><a href="javascript:;">微信</a></dd>
+                    <dd><a href="javascript:;">GitHub</a></dd>
+                    <dd><a href="javascript:;">邮件</a></dd>
+                    <dd><a href="javascript:;">微信公众号</a></dd>
+                </dl>
+            </li>
+        </ul>
 
     </div>
     <div id="frames">
@@ -31,5 +73,13 @@
         <!-- <p>©北京林业大学计算机与网络协会</p> -->
     </div>
 </body>
+<!-- <script>
+    //注意：导航 依赖 element 模块，否则无法进行功能性操作
+    layui.use('element', function () {
+        var element = layui.element;
+
+        //…
+    });
+</script> -->
 
 </html>
