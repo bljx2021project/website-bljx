@@ -12,9 +12,16 @@
     justify-content: space-between;
 }
 #header ul{
-    
-    right: 15px;
+    right: 5px;
 }
+.layui-form-select dl dd {
+    color: rgba(0,0,0,.85);
+}
+.layui-form-select .layui-input
+{
+    cursor: auto;
+}
+
 
 #side {
     position: fixed;
@@ -27,8 +34,6 @@
 }
 #logo img{
     margin: 15px;
-
-    border-radius: 50%;
     width: 150px;
 }
 #logo h5{
