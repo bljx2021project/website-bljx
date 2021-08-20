@@ -7,12 +7,12 @@
     left: 250px;
     width: calc(100% - 250px);
     z-index: 100;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    min-width: max-content;
 }
-#header ul{
-    right: 5px;
+#header form{
+    float: left;
+    margin: 11px auto;
 }
 .layui-form-select dl dd {
     color: rgba(0,0,0,.85);
