@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>北林计协|北京林业大学计算机与网络协会</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 使用Layui -->
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <script src="./layui/layui.js"></script>
+</head>
+
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo layui-hide-xs layui-bg-black">北京林业大学计算机与网络协会</div>
+            <!-- 头部区域（可配合layui 已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+                    <a href="javascript:;">
+                        <img src="./images/test1.png" class="layui-nav-img">
+                        tester
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">个人资料</a></dd>
+                        <dd><a href="">设置</a></dd>
+                        <dd><a href="">注销</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+                    <a href="javascript:;">
+                        <i class="layui-icon layui-icon-more-vertical"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item"><a href="javascript:;">介绍</a></li>
+                    <li class="layui-nav-item"><a href="javascript:;">维修预约</a></li>
+                    <li class="layui-nav-item"><a href="javascript:;">知识科普</a></li>
+                    <li class="layui-nav-item"><a href="javascript:;">大型维修日</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <div style="padding: 15px;">内容主体区域。记得修改 layui.css 和 js 的路径</div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            底部固定区域
+        </div>
+    </div>
+</body>
+
+</html>
