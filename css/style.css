@@ -5,7 +5,7 @@
     position: fixed;
     height: 60px;
     left: 250px;
-    width: calc(100% - 250px);
+    right: 0;
     z-index: 100;
     align-items: center;
     min-width: max-content;
@@ -42,18 +42,25 @@
 }
 
 #frames {
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 250px;
-    width: auto;
+    right: 0;
+    bottom: 0;
+    width: auto  ;
+    box-sizing: border-box;
+    padding-bottom: 44px;
 }
 
 #footer {
     position: fixed;
-    bottom: 0;
     left: 250px;
-    width: auto;
-    height: 3em;
-    
-    background-color: honeydew;
+    right: 0;
+    bottom: 0;
+    z-index: 990;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 15px;
+    box-shadow: -1px 0 4px rgb(0 0 0 / 12%);
+    background-color: #FAFAFA;
 }
